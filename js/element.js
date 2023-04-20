@@ -20,6 +20,7 @@ var b8 = document.getElementById('b8');
 var b8 = document.getElementById('b8');
 var b9 = document.getElementById('b9');
 
+var gameOverImg = document.getElementById('game-over');
 
 var to = document.getElementById('t-o');
 var tx = document.getElementById('t-x');

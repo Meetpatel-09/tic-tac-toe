@@ -11,6 +11,7 @@ for (let index = 0; index < 3; index++) {
 }
 
 var gameOver = 1;
+gameOverImg.style.display = "none";
 
 var player1Win = [1, 1, 1];
 var player2Win = [2, 2, 2];
@@ -38,6 +39,7 @@ function getMark(i, j) {
                board[i][j] = 1;
                if (equals(board[i], player1Win)) {
                     gameOver = 0;
+                    gameOverImg.style.display = "block";
                } else {
                     turn = 1;
                     getTurn(turn);
@@ -48,6 +50,7 @@ function getMark(i, j) {
                board[i][j] = 2;
                if (equals(board[i], player2Win)) {
                     gameOver = 0;
+                    gameOverImg.style.display = "block";
                } else {
                     turn = 0;
                     getTurn(turn);
